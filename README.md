@@ -1,4 +1,4 @@
-# Current weather bot
+# Commit weather bot
 
 ## Running locally
 
