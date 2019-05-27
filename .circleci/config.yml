@@ -43,7 +43,7 @@ jobs:
       - setup_remote_docker
       - restore_cache:
           keys:
-            - deps-{{ arch }}-{{ checksum "package-lock.lock" }}
+            - deps-{{ arch }}-{{ checksum "package-lock.json" }}
       - run:
           name: Build and Deploy
           command: |
