@@ -5,7 +5,7 @@ WORKDIR /data
 
 # Install app dependencies
 ENV NPM_CONFIG_LOGLEVEL warn
-ENV NODE_PORT 80
+ENV PORT 80
 
 COPY package*.json ./
 RUN npm install --only-production
