@@ -15,4 +15,4 @@ COPY . .
 EXPOSE 80 443
 
 # Start pm2.json process file
-CMD ["pm2-runtime", "start", "pm2.json"]
+CMD ["pm2-runtime", "start", "pm2.json", "--web"]

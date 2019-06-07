@@ -36,4 +36,4 @@ jobs:
             docker build -t previousnext/commit-weather:${VERSION} $(pwd)
             docker push previousnext/commit-weather:${VERSION}
             skpr deploy ${SKPR_ENV} ${VERSION}
-            notify --channel="#sys-ops-builds" --username="Skipper" --icon-emoji=":k8s:" --message="Deployed \`${VERSION}\` from \`${CIRCLE_BRANCH}\` to *${SKPR_ENV}*"
+            notify --channel="#commit-weather" --username="Skipper" --icon-emoji=":k8s:" --message="Deployed \`${VERSION}\` from \`${CIRCLE_BRANCH}\` to *${SKPR_ENV}*"

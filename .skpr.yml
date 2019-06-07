@@ -1,6 +1,6 @@
 cluster: "pnx.cd.pnx.com.au"
 
-channel: '#sys-ops-builds'
+channel: '#commit-weather'
 
 environments:
   - name: "prod"
