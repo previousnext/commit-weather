@@ -14,8 +14,5 @@ COPY . .
 
 EXPOSE 80 443
 
-# Show current folder structure in logs
-RUN ls -al -R
-
 # Start pm2.json process file
 CMD ["pm2-runtime", "start", "pm2.json"]
