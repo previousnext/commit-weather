@@ -1,0 +1,10 @@
+cluster: "pnx.cd.pnx.com.au"
+
+channel: '#sys-ops-builds'
+
+environments:
+  - name: "prod"
+    spec:
+      domain:
+        - "commit-weather.cd.pnx.com.au"
+      minInstances: 1

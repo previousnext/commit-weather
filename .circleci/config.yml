@@ -23,7 +23,7 @@ workflows:
           <<: *defaults
           filters:
             branches:
-              only: releases
+              only: master
       - approve:
           type: approval
           requires:
